@@ -1,0 +1,16 @@
+Here are the step-by-step instructions for the Merge Sort algorithm:
+
+Divide: Split the input array into two halves. This can be done by finding the midpoint of the array.
+
+Conquer: Recursively apply the Merge Sort algorithm to each half of the array until each subarray contains only one element. This is the base case of the recursion.
+
+Merge: Merge the sorted subarrays back together to form a single sorted array. This is done by comparing elements from the two subarrays and placing them in the correct order into a new array.
+
+Compare the first element of the left subarray with the first element of the right subarray.
+Place the smaller (or larger, depending on the sorting order) element into the merged array.
+Move to the next element in the subarray from which the element was taken.
+Repeat the comparison and placement process until one of the subarrays is exhausted.
+Add the remaining elements from the other subarray to the merged array.
+Return the merged array, which now contains all elements of the original array in sorted order.
+
+These steps are recursively applied until the entire array is sorted. The algorithm guarantees that the elements are correctly sorted in ascending (or descending) order. Additionally, Merge Sort is known for its stability, meaning that it preserves the relative order of equal elements in the input array.
